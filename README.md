@@ -21,7 +21,7 @@ Personagens masculinos são quase o dobro dos femininos (~66% vs ~34%).
 
 ## 3. Mediana de aparições
 
-- Geral: **119,33** aparições por personagem.
+- Geral: **132** aparições por personagem.
 - Por gênero:
 
 | Gênero | Mediana de aparições |
