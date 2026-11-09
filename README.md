@@ -19,12 +19,12 @@ A coluna `Name/Alias` **não é uma chave única confiável**: 10 linhas têm o 
 
 Personagens masculinos são quase o dobro dos femininos (~66% vs ~34%).
 
-## 3. Média de aparições
+## 3. Mediana de aparições
 
 - Geral: **119,33** aparições por personagem.
 - Por gênero:
 
-| Gênero | Média de aparições |
+| Gênero | Mediana de aparições |
 |---|---|
 | MALE | 156 |
 | FEMALE | 101 |
