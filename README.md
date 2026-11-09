@@ -21,15 +21,15 @@ Personagens masculinos são quase o dobro dos femininos (~66% vs ~34%).
 
 ## 3. Média de aparições
 
-- Geral: **414,05** aparições por personagem.
+- Geral: **119,33** aparições por personagem.
 - Por gênero:
 
 | Gênero | Média de aparições |
 |---|---|
-| MALE | 490,07 |
-| FEMALE | 263,33 |
+| MALE | 156 |
+| FEMALE | 101 |
 
-Além de serem minoria, as personagens femininas aparecem em média **quase metade** das vezes que os personagens masculinos.
+Os personagens masculinos apresentam maior número de participações do que os femininos, uma diferença de aproximadamente 54,5%. Isso sugere que a posição central da distribuição masculina é superior à feminina, indicando maior presença dos personagens masculinos no conjunto analisado.
 
 ## 4. Qualidade dos dados: coluna `Year`
 
