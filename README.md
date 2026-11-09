@@ -84,7 +84,7 @@ Em ambos os gêneros, quem já morreu tem uma média de aparições bem maior �
 
 ## Principais conclusões
 
-1. Personagens masculinos dominam numericamente (2:1) e em aparições (quase 2x a média).
+1. A mediana de aparições dos personagens masculinos é aproximadamente 54,5% superior à das personagens femininas.
 2. A representatividade feminina cresceu de forma constante até 1990, mas regrediu na década de 2000 em diante.
 3. Mulheres entram no grupo mais via programas honorários/acadêmicos do que como membros plenos.
 4. A "morte" nos quadrinhos é pouco permanente para todos, mas especialmente para personagens femininas.
