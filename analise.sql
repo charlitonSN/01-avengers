@@ -29,6 +29,25 @@ GROUP BY Gender;
 
 
 
+-- Qual o percentual de personagens femininos na base?
+SELECT
+    COUNT(CASE
+        WHEN Gender = 'FEMALE' THEN 1
+    END) AS qtd_femininos,
+
+    COUNT(*) AS qtd_total,
+
+    ROUND(
+        100.0 * COUNT(CASE
+            WHEN Gender = 'FEMALE' THEN 1
+        END) / COUNT(*),
+        2
+    ) AS percentual_femininos
+
+FROM avengers;
+
+
+
 -- Qual e a media de aparicoes dos personagens?
 SELECT
     ROUND(AVG(Appearances), 2) AS media_aparicoes
@@ -46,7 +65,51 @@ FROM avengers
 
 GROUP BY Gender;
 
+-- Mediana Por Genero
+WITH ordenacao AS (
+    SELECT
+        gender,
+        Appearances,
+        ROW_NUMBER() OVER (
+            PARTITION BY gender
+            ORDER BY Appearances
+        ) AS posicao,
+        COUNT(*) OVER (
+            PARTITION BY gender
+        ) AS total
+    FROM avengers
+)
 
+SELECT
+    gender,
+    AVG(Appearances) AS mediana
+FROM ordenacao
+WHERE posicao IN (
+    (total + 1) / 2,
+    (total + 2) / 2
+)
+GROUP BY gender;
+
+
+
+-- Mediana Geral
+WITH ordenacao AS (
+    SELECT
+        Appearances,
+        ROW_NUMBER() OVER (
+            ORDER BY Appearances
+        ) AS posicao,
+        COUNT(*) OVER () AS total
+    FROM avengers
+)
+
+SELECT
+    AVG(Appearances) AS mediana_geral
+FROM ordenacao
+WHERE posicao IN (
+    (total + 1) / 2,
+    (total + 2) / 2
+);
 
 -- Como a adesao dos herois ao grupo dos Avengers ao longo dos anos se modificou?
 WITH herois_por_ano AS (
